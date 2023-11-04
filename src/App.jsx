@@ -4,12 +4,13 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Root from './pages/Root'
-import './App.css'
+import Root from './pages/Root';
+import './App.css';
+import Dashboard from './pages/Dashboard/Dashboard';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-
+      <Route index element={<Dashboard />} />
     </Route>
   )
 );
