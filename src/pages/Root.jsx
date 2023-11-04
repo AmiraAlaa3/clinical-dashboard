@@ -22,7 +22,6 @@ const Root = () => {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-
             <div>
                 <Navbar drawerWidth={drawerWidth}/>
                 <Asidebar />

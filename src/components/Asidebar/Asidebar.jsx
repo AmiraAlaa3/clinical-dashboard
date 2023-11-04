@@ -1,9 +1,9 @@
-const Asidbar = () => {
+const Asidebar = () => {
     return (
         <div>
-            
+
         </div>
     )
 }
 
-export default Asidbar
+export default Asidebar

@@ -12,8 +12,10 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
+<<<<<<< HEAD
     "@mui/x-charts": "^6.18.0",
     "apexcharts": "^3.44.0",
     "bootstrap": "^5.3.2",
@@ -26,6 +28,13 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
     "xlsx": "^0.18.5"
+=======
+    "bootstrap": "^5.3.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+>>>>>>> 622e9e712c51b6e0818454fb968cd6f8bb404c51
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
