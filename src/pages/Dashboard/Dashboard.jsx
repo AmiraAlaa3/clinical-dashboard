@@ -52,7 +52,7 @@ const Dashboard = () =>{
           <div className='row mt-3'>
              <div className="col p-3">
               <div className={`${styles.table}`}>
-              <div className="table-header mb-5 d-flex justify-content-between align-items-center">
+              <div className="mb-5 d-flex justify-content-between align-items-center">
                 <h3 className={`${styles.tableHeader} mb-0`}>Best Selling Products</h3>
                 <button type="button" className={`${styles.btn}`}>See More</button>
               </div>
