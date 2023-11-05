@@ -11,7 +11,7 @@ import Orders from './pages/Orders/Orders';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route index element={<Orders />} />
+      <Route index element={<Dashboard />} />
     </Route>
   )
 );
