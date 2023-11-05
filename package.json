@@ -15,7 +15,6 @@
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
-<<<<<<< HEAD
     "@mui/x-charts": "^6.18.0",
     "apexcharts": "^3.44.0",
     "bootstrap": "^5.3.2",
@@ -26,15 +25,9 @@
     "react-apexcharts": "^1.4.1",
     "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
+    "react-js-pagination": "^3.0.3",
     "react-router-dom": "^6.18.0",
     "xlsx": "^0.18.5"
-=======
-    "bootstrap": "^5.3.2",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.9.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0"
->>>>>>> 622e9e712c51b6e0818454fb968cd6f8bb404c51
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -44,6 +37,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.69.5",
     "vite": "^4.4.5"
   }
 }

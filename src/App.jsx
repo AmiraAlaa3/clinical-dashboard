@@ -7,6 +7,7 @@ import {
 import Root from './pages/Root';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Orders from './pages/Orders/Orders';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
