@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Styles from './InventoryComp.module.css';
+import { useNavigate } from 'react-router';
 
 function InventoryComp() {
 
@@ -13,6 +14,11 @@ function InventoryComp() {
       { id: 6, name: "Allegra 120mg Tablet", groupN: "Generic Medicine", stock: 150, action: 'View Full Detail' },
     ]);
 
+    const navgate = useNavigate();
+    function goToAddMedicine() {
+        navgate("/add-new-medicine");
+    }
+
   return (
     <>
       <div className="container">
@@ -23,7 +29,7 @@ function InventoryComp() {
               <p>List of medicines available for sales.</p>
             </div>
             <div className={Styles.titleBtn}>
-              <button>
+              <button onClick={goToAddMedicine}>
                 <i className="fa-solid fa-plus"></i>
                 Add New Item
               </button>
