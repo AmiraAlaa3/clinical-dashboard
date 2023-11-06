@@ -36,7 +36,9 @@ const Dashboard = () =>{
               <div className="chart-header mb-4">
                 <h3 className={`${styles.chartTitle}`}>Popular Categories</h3>
               </div>
-              <PieChartComponent/>
+              <div className="d-flex justify-content-center align-items-center">
+                  <PieChartComponent/>
+              </div>
             </div>
             </div>
             <div className="col-lg-6 p-3 chart ">
@@ -44,7 +46,6 @@ const Dashboard = () =>{
               <div className="chart-header mb-4">
                 <h3 className={`${styles.barChartTitle}`}>Visits by type</h3>
               </div>
-              {/* <BarsDataset/> */}
               <ApexChart/>
             </div>
             </div>
@@ -52,7 +53,7 @@ const Dashboard = () =>{
           <div className='row mt-3'>
              <div className="col p-3">
               <div className={`${styles.table}`}>
-              <div className="table-header mb-5 d-flex justify-content-between align-items-center">
+              <div className="mb-5 d-flex justify-content-between align-items-center">
                 <h3 className={`${styles.tableHeader} mb-0`}>Best Selling Products</h3>
                 <button type="button" className={`${styles.btn}`}>See More</button>
               </div>

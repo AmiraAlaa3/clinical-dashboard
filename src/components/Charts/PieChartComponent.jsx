@@ -25,7 +25,7 @@ const PieChartComponent = () => {
                       series={chartOptions.series} 
                       type="donut" 
                       height={360} 
-                      width={380} />
+                      width={360} />
     </div>
   );
 }
