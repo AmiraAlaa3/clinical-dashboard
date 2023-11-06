@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
+import eye from '../../assets/el_eye-close.svg'
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
-    password: ''
+    password: '',
+    showPassword: false
   });
   const navigate = useNavigate();
 
+  const togglePasswordVisibility = () => {
+    setFormData({
+      ...formData,
+      showPassword: !formData.showPassword
+    });
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -43,20 +51,28 @@ const Login = () => {
             required
           />
         </div>
-        <div className="mb-5">
+        <div className="mb-3">
           <label htmlFor="password" className="form-label mb-3">
             Password
           </label>
-          <input
-            type="password"
-            className="form-control input-password"
-            id="password"
-            placeholder="please enter your password"
-            name="password" 
-            value={formData.password}
-            onChange={handleInputChange}
-            required
-          />
+          <div className="input-group input-password">
+            <input
+              type={formData.showPassword ? 'text' : 'password'}
+              className="form-control custom-input"
+              id="password"
+              placeholder="please enter your password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              required
+            />
+            <div onClick={togglePasswordVisibility} className='p-0' >
+              {formData.showPassword ? <img src={eye} alt='hide password' width={30}/> : <img src={eye} alt='show password' width={30}/> }
+            </div>
+          </div>
+        </div>
+        <div className="mb-3 text-end">
+          <a href="/" className='link-forget'>Forgot Password?</a>
         </div>
         <button type="submit" className="w-100 mt-5 btn-login">Log in</button>
       </form>
