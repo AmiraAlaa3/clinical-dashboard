@@ -19,6 +19,10 @@
     padding: 20px !important;
     font-size: 20px !important; 
 }
+
+.form-control:focus {
+    box-shadow: none !important;
+}
   
 .custom-input{
     border: none !important;
@@ -26,7 +30,7 @@
     font-size: 20px !important; 
 }
 .link-forget{
-    color: hsl(174, 37%, 21%);
+    color: #224A46;
     font-size: 24px;
     font-weight: 300;
     text-decoration-line: underline;
