@@ -11,7 +11,9 @@ const Navbar = ({ drawerWidth }) => {
             display: "flex",
             alignItems: 'center',
             minHeight: '15vh',
-            bgcolor: theme.palette.background.main
+            justifyContent: "space-between",
+            bgcolor: theme.palette.background.main,
+            width: "100%"
 
         }}>
             <Box component="div" sx={{
@@ -31,7 +33,9 @@ const Navbar = ({ drawerWidth }) => {
             </Box>
             <Box component="div" sx={{
                 display: "flex",
-                mr: "18.5px"
+                mr: "2rem",
+                alignItems: "center",
+                
             }}>
                 <Paper
                     component="form"
@@ -71,35 +75,32 @@ const Navbar = ({ drawerWidth }) => {
                     bgcolor: "#DAFFF5",
                     width: "50px",
                     height: "50px",
-                    borderRadius: "50%"
+                    borderRadius: "50%",
+                    mr: "1.3rem"
                 }} >
                     <img src={notifications} alt="notifications" />
                 </IconButton>
-            </Box>
-                <Box sx={{
-                    width: "1.5px",
-                    height: "78px",
-                    bgcolor: "rgba(245, 245, 245, 0.62)", 
-                    mr: "18px"
-                }}></Box>
-            <Box sx={{
-                display: "flex",
-                gap: "20px",
-                alignItems: "center"
-            }}>
-                <IconButton aria-label="edit" sx={{
-                    "& .MuiTouchRipple-root": {
-                        display: "none"
-                    },
-                    "&:hover": {
-                        bgcolor: "transparent"
-                    }
-                }}>
-                    <img src={edit} alt="edit" width={24} height={24 } />
-                </IconButton>
-                <Typography variant="body1">
-                    Edit
-                </Typography>
+                
+                    <Box sx={{
+                        width: "1.5px",
+                        height: "78px",
+                        bgcolor: "rgba(245, 245, 245, 0.62)", 
+                        mr: "18px"
+                    }}></Box>
+                    <IconButton aria-label="edit" sx={{
+                        "& .MuiTouchRipple-root": {
+                            display: "none"
+                        },
+                        "&:hover": {
+                            bgcolor: "transparent"
+                        }
+                    }}>
+                        <img src={edit} alt="edit" width={24} height={24 } />
+                    </IconButton>
+                    <Typography variant="body1">
+                        Edit
+                    </Typography>
+            
             </Box>
         </Box>
     )

@@ -1,5 +1,4 @@
-import React from 'react'
-import './card.css'
+import './Card.css'
 const CardAnalysis = ({logo,header,count,id}) => {
   return (
     <div className="col-md-6 col-lg-3">

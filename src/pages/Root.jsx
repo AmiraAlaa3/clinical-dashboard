@@ -25,7 +25,7 @@ const Root = () => {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Box component="div">
+            <Box component="div" sx={{width: "100%"}}>
                 <Navbar drawerWidth={drawerWidth} />
                 <Asidebar drawerWidth={drawerWidth}/>
                 <Box
