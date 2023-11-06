@@ -8,10 +8,12 @@ import Root from './pages/Root';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Orders from './pages/Orders/Orders';
+import InventoryPage from "./pages/InventoryPage/InventoryPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route index element={<Dashboard />} />
+      {/* <Route index element={<Dashboard />} /> */}
+      <Route index element={<InventoryPage />} />
     </Route>
   )
 );
