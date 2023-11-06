@@ -19,6 +19,19 @@
     padding: 20px !important;
     font-size: 20px !important; 
 }
+  
+.custom-input{
+    border: none !important;
+    padding: 0 !important;
+    font-size: 20px !important; 
+}
+.link-forget{
+    color: hsl(174, 37%, 21%);
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
 .btn-login{
     color: #224A46;
     font-size: 36px;
