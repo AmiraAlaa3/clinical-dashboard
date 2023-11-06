@@ -7,24 +7,27 @@ const theme = createTheme({
     palette: {
         primary: {
             main: "#1246AC",
-            gray: '#464950'
+            text: "#224A46"
         },
         secondary: {
             main: "#EAF1FF",
-            gray: "rgba(217, 217, 210, 0.39)"
+            text: "#141D21"
 
         },
+        background: {
+            main: "#8BC4B5"
+        }
     },
 });
 
 const Root = () => {
-    const drawerWidth = 261;
+    const drawerWidth = 324;
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <div>
-                <Navbar drawerWidth={drawerWidth}/>
-                <Asidebar />
+            <Box component="div">
+                <Navbar drawerWidth={drawerWidth} />
+                <Asidebar drawerWidth={drawerWidth}/>
                 <Box
                     component="main"
                     sx={{
@@ -36,7 +39,7 @@ const Root = () => {
                 >
                     <Outlet />
                 </Box>
-            </div>
+            </Box>
         </ThemeProvider>
     );
 };
