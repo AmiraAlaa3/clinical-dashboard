@@ -1,4 +1,3 @@
-import React from 'react'
 import './Card.css'
 const CardAnalysis = ({logo,header,count,id}) => {
   return (
