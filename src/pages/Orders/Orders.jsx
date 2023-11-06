@@ -9,7 +9,7 @@ const Orders =() => {
    const date =['today','last week'];
 
    return(
-        <div className="container mt-3 px-4">
+        <div className="container mt-3">
            <div className="header">
               <div className="contant d-flex justify-content-between align-items-center">
                 <div className="title">
