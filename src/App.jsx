@@ -10,10 +10,13 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Orders from './pages/Orders/Orders';
 import InventoryPage from "./pages/InventoryPage/InventoryPage";
 import AddnewmedicinePage from "./pages/AddnewmedicinePage/AddnewmedicinePage";
+import CustomersPage from "./pages/CustomersPage/CustomersPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       {/* <Route index element={<Dashboard />} /> */}
+      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="customers" element={<CustomersPage />} />
       <Route path="inventory" element={<InventoryPage />} />
       <Route path="add-new-medicine" element={<AddnewmedicinePage />} />
       <Route index element={<InventoryPage />} />
