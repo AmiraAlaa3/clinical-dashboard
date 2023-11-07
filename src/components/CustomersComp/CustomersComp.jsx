@@ -11,14 +11,14 @@ import customerImg8 from '../../assets/custmerImg8.png';
 function CustomersComp() {
 
   const [customers, setCustomers] = useState([
-    { id: 0, img: customerImg1, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 1, img: customerImg2, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 2, img: customerImg3, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 3, img: customerImg4, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 4, img: customerImg5, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 5, img: customerImg6, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 6, img: customerImg7, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
-    { id: 7, img: customerImg8, name: 'Yahia Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 0, img: customerImg1, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 1, img: customerImg2, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 2, img: customerImg3, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 3, img: customerImg4, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 4, img: customerImg5, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 5, img: customerImg6, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 6, img: customerImg7, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
+    { id: 7, img: customerImg8, name: 'Ahmed Mahmoud', email: 'Ahmed@gmail.com', orders: 4, total: '12,00' },
   ]);
 
   return (
