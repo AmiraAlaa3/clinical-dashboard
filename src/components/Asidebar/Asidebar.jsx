@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
 import logout from "../../assets/logout.svg"
-import { pages } from "../../constants/index.jsx";
+import { pages } from "../../constants";
 import './Asidebar.css'
 
 import {

@@ -3,10 +3,10 @@ import OrderTable from "../../components/Tables/OrderTable";
 import styles from './Order.module.css';
 
 
-const Orders =() => {
+const Orders = () => {
 
-   const status =['all status','delivered','cancelled','new order'];
-   const date =['today','last week'];
+   const status = ['all status', 'delivered', 'cancelled', 'new order'];
+   const date = ['today', 'last week'];
 
    return(
         <div className="container mt-3">
@@ -20,12 +20,12 @@ const Orders =() => {
                   <DropdownButton items={status}/>
                   <DropdownButton items={date}/>
                </div>
-              </div>
-           </div>
-           <div className="my-3">
-             <OrderTable/>
-           </div>
-        </div>
+            </div>
+         </div>
+         <div className="my-3">
+            <OrderTable />
+         </div>
+      </div>
    )
 }
 export default Orders;
