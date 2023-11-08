@@ -10,10 +10,9 @@ const Navbar = ({ drawerWidth }) => {
             pr: { md: '30px', xl: '0px' },
             display: "flex",
             alignItems: 'center',
-            minHeight: '15vh',
+            minHeight: '8.0625rem',
             justifyContent: "space-between",
             bgcolor: theme.palette.background.main,
-            width: "100%"
 
         }}>
             <Box component="div" sx={{
