@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Orders from './pages/Orders/Orders';
 import Welcome from "./pages/Welcome/Welcome";
 import React from "react";
+import Analytics from "./pages/Analytics/Analytics.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <React.Fragment>
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Root />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path='/Orders' element={<Orders />} />
+        <Route path='/analytics' element={<Analytics />} />
       </Route>
     </React.Fragment>
   )
