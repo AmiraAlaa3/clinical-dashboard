@@ -12,6 +12,7 @@ const CustomerGrowth = () => {
             height: "357.252px",
             borderRadius: "14.102px",
             p: "1.6rem 1.4rem",
+            
 
         }} component="div" >
             <Box component="div" sx={{
