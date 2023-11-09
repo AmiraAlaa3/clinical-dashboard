@@ -14,6 +14,7 @@ import InventoryPage from "./pages/InventoryPage/InventoryPage";
 import AddnewmedicinePage from "./pages/AddnewmedicinePage/AddnewmedicinePage";
 import CustomersPage from "./pages/CustomersPage/CustomersPage";
 import React from "react";
+import Chat from "./pages/Chat/Chat.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
       <React.Fragment>
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path='/Orders' element={<Orders />} />
         <Route path='/analytics' element={<Analytics />} />
+        <Route path='/chat' element={<Chat />} />
         <Route path="/customers" element={<CustomersPage />} />
         <Route path="/inventory" element={<InventoryPage />} />
         <Route path="/add-new-medicine" element={<AddnewmedicinePage />} />
