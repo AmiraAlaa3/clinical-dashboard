@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { orderTableFields, ordersTableData } from '../../constants';
 import './OrderTable.css';
 import Pagination from 'react-js-pagination';
-const ITEMS_PER_PAGE = 7;
+const ITEMS_PER_PAGE = 5;
 
 const OrderTable = () => {
     const [activePage, setActivePage] = useState(1);

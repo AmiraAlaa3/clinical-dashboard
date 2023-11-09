@@ -3,9 +3,7 @@ import RatingPercentage from "../RatingPercentage/RatingPercentage.jsx"
 
 const Rating = () => {
     return (
-        <Box component="div" sx={{
-            p: "18px"
-        }}>
+        <Box component="div">
             <Box component="div">
                 <Typography variant="h4" sx={{
                     fontFamily: "poppins",
@@ -30,15 +28,17 @@ const Rating = () => {
                 </Typography>
                 <Box component="div" sx={{
                     display: 'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
                     mt: "3rem"
                 }}>
                     <RatingPercentage title="Medicines" percentage={85} color="#6463D6" opacity={.8} size={7.065}/>
-                <RatingPercentage title="Skin Care" percentage={85} color="#F99C30" opacity={.9} size={11.48894}/>
-                <RatingPercentage title="Packaging" percentage={92} color="#2FBFDE" opacity={.9} size={8.33113}/>
+                    <RatingPercentage title="Skin Care" percentage={85} color="#F99C30" opacity={.9} size={11.48894}/>
+                    <RatingPercentage title="Packaging" percentage={92} color="#2FBFDE" opacity={.9} size={8.33113}/>
                 </Box>
                 
             </Box>
-        </Box >
+        </Box>
     )
 }
 

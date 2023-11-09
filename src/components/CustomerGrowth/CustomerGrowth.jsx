@@ -6,15 +6,7 @@ import MonthlySalesReport from "../Charts/MonthlySalesReport/MonthlySalesReport.
 const CustomerGrowth = () => {
     const theme = useTheme()
     return (
-        <Box sx={{
-            bgcolor: "#F9FAFC",
-            width: "691px",
-            height: "357.252px",
-            borderRadius: "14.102px",
-            p: "1.6rem 1.4rem",
-            
-
-        }} component="div" >
+        <Box component="div" >
             <Box component="div" sx={{
                 display: "flex",
                 justifyContent: "space-between"
@@ -33,9 +25,8 @@ const CustomerGrowth = () => {
                 <AnalyticsDropDownBtn btnTitle="Current Year"/>
             </Box>
             <MonthlySalesReport />
-
-
-        </Box>
+     </Box>
+      
     )
 }
 

@@ -9,23 +9,7 @@ const PieChartComponent = () => {
       },
       labels: ['Banadol', 'VitaminB12', 'Cold&flue', 'Other'],
       colors: ['#FEB157', '#A765FA', '#FF6F6F', '#3BBDC4'],
-      plotOptions: {
-        pie: {
-          customScale: 0.9,
-
-        }
-      },
-
-      legend: {
-        formatter: (val, opts) => {
-          return `
-              <div>
-                <p>${val}</p>
-                <p>${opts.w.config.series[opts.seriesIndex]}</p>
-              </div>
-            `
-        }
-      }
+     
     },
     series: [38.6, 22.5, 30.8, 8.1],
   };
