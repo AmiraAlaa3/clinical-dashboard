@@ -31,7 +31,8 @@ const RatingPercentage = ({ percentage, opacity, title, color, size }) => {
                     fontWeight: 400,
                     lineHeight: "1.413rem",
                     letterSpacing: "0.02206rem"
-                }}>{`${percentage}%`}</Typography>
+                }}>{`${percentage}%`}
+                </Typography>
                 <Typography variant="h6" sx={{
                     color: "#FFF",
                     fontFamily: "poppins",
@@ -39,7 +40,8 @@ const RatingPercentage = ({ percentage, opacity, title, color, size }) => {
                     fontWeight: 400,
                     lineHeight: " 0.52988rem",
                     letterSpacing: "0.02206rem"
-                }}>{title}</Typography>
+                }}>{title}
+                </Typography>
                 <CircularProgress thickness={.7} size={`${size + 1}rem`} variant="determinate" value={percentage} sx={{
                     position: 'absolute',
                     display: 'flex',
@@ -50,7 +52,7 @@ const RatingPercentage = ({ percentage, opacity, title, color, size }) => {
                     color: color
 
                 }} />
-            </Box >
+            </Box>
         </>
 
 

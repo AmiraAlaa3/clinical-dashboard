@@ -6,21 +6,26 @@ import {
 } from "react-router-dom";
 import Root from './pages/Root';
 import './App.css';
+import Welcome from "./pages/Welcome/Welcome";
 import Dashboard from './pages/Dashboard/Dashboard';
 import Orders from './pages/Orders/Orders';
+import Analytics from "./pages/Analytics/Analytics.jsx";
 import InventoryPage from "./pages/InventoryPage/InventoryPage";
 import AddnewmedicinePage from "./pages/AddnewmedicinePage/AddnewmedicinePage";
 import CustomersPage from "./pages/CustomersPage/CustomersPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      {/* <Route index element={<Dashboard />} /> */}
-      <Route path="dashboard" element={<Dashboard />} />
-      <Route path="customers" element={<CustomersPage />} />
-      <Route path="inventory" element={<InventoryPage />} />
-      <Route path="add-new-medicine" element={<AddnewmedicinePage />} />
-      <Route index element={<InventoryPage />} />
-    </Route>
+      <React.Fragment>
+      <Route index element={<Welcome />} />
+      <Route path="/" element={<Root />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/Orders' element={<Orders />} />
+        <Route path='/analytics' element={<Analytics />} />
+        <Route path="customers" element={<CustomersPage />} />
+        <Route path="inventory" element={<InventoryPage />} />
+        <Route path="add-new-medicine" element={<AddnewmedicinePage />} />
+      </Route>
+      </React.Fragment>
   )
 );
 
