@@ -55,3 +55,12 @@ font-size: 16px;
 font-weight: 500;
 text-transform: capitalize;
 }
+.time {
+color: rgba(0, 0, 0, 0.39);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}

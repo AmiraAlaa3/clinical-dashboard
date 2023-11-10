@@ -26,6 +26,7 @@ const router = createBrowserRouter(
         <Route path='/chat' element={<Chat />} />
         <Route path="/customers" element={<CustomersPage />} />
         <Route path="/inventory" element={<InventoryPage />} />
+        <Route path="/help" element={<Help />} />
         <Route path="/add-new-medicine" element={<AddnewmedicinePage />} />
       </Route>
       </React.Fragment>
