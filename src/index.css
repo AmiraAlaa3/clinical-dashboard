@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 5.285px;
+  height: 69.589px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B7BDCB;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
