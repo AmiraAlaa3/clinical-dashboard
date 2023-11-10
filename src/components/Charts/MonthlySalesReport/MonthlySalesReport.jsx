@@ -5,8 +5,9 @@ const MonthlySalesReport = () => {
 
     const options = {
         chart: {
-            id: "basic-bar",
-            zoom: false
+            type: 'area',
+            height: 200,
+            zoom:false
         },
         tooltip: {
             custom: function ({ series, seriesIndex, dataPointIndex }) {
@@ -46,8 +47,8 @@ const MonthlySalesReport = () => {
             options={options}
             series={series}
             type="area"
-            height={211.531}
-            width={591.346} />
+            height={200}
+            width={"100%"} />
     );
 }
 
