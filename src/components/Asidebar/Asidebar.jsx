@@ -102,7 +102,7 @@ const Asidebar = ({ drawerWidth }) => {
                             <ListItemButton sx={{ m: 0, p: 0 }}>
                                 <ListItemIcon sx={{
                                     '& svg g path': { fill: location.pathname === page.path ? "blue" : '' }
-                                }}><img src={page.icon}></img></ListItemIcon>
+                                }}><img className={location.pathname === page.path ? 'active' : ''} src={page.icon}></img></ListItemIcon>
                                 <ListItemText primary={page.name}
                                     sx={{
                                         '& .MuiTypography-root': {
@@ -111,8 +111,8 @@ const Asidebar = ({ drawerWidth }) => {
                                             fontWeight: 500,
                                             letterSpacing: '0.32px',
                                             background: location.pathname === page.path ? "linear-gradient(180deg, #DAFFF5 0%, #90FFE2 100%)" : "",
-                                            backgroundClip: location.pathname === page.path? "text" : "",
-                                            WebkitTextFillColor: location.pathname === page.path? "transparent": ""
+                                            backgroundClip: location.pathname === page.path ? "text" : "",
+                                            WebkitTextFillColor: location.pathname === page.path ? "transparent" : ""
                                         }
                                     }} />
                             </ListItemButton>
@@ -131,7 +131,9 @@ const Asidebar = ({ drawerWidth }) => {
                     ml: "32px"
                 }}
             >
-                <IconButton aria-label="logout" sx={{ p: 0, m: 0 }}>
+                <IconButton aria-label="logout" sx={{ p: 0, m: 0 }} onClick={
+                    () => navigate('/')
+                }>
                     <img src={logout} alt="logout" />
                 </IconButton>
                 <Typography
