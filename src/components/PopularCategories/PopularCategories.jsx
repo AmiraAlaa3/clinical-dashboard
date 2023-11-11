@@ -7,10 +7,10 @@ const PopularCategories = () => {
                 <h3 className={`${styles.chartTitle}`}>Popular Categories</h3>
             </div>
             <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
-                  <PieChartComponent/>
+                <PieChartComponent />
             </div>
         </>
-       
+
     )
 }
 

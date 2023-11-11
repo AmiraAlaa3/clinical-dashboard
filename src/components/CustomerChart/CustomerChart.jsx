@@ -1,5 +1,5 @@
 import Chart from "react-apexcharts";
-
+import { Box } from "@mui/material";
 const CustomerChart = () => {
     const series = [{
         name: 'Last Month',
@@ -48,13 +48,26 @@ const CustomerChart = () => {
     };
 
     return (
+        <>
         <Chart
             options={options}
             series={series}
             type="area"
             width={'100%'}
-            height={260}
+            height={190}
         />
+        <Box component="div" sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            color: '#141D21',
+            fontSize: '14px',
+            fontWeight: 500,
+        }}>
+            <p>$3,004</p>
+            <p>$4,504</p>
+        </Box>
+        </>
     )
 }
 
