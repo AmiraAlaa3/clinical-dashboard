@@ -1,4 +1,3 @@
-import { Box, Grid } from "@mui/material"
 import CustomerGrowth from "../../components/CustomerGrowth/CustomerGrowth.jsx"
 import Rating from "../../components/Rating/Rating.jsx"
 import PopularCategories from "../../components/PopularCategories/PopularCategories.jsx"
